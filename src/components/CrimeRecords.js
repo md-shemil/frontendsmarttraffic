@@ -22,9 +22,9 @@ function CrimeRecords() {
 
   return (
     <div>
-      <h4 className="text-primary">Crime Records</h4>
+      <h2>CRIME RECORDS</h2>
       {loading && <p>Loading...</p>}
-      {error && <p className="text-danger">{error}</p>}
+      {error && <p className="error">{error}</p>}
       <table className="table table-dark mt-3">
         <thead>
           <tr>

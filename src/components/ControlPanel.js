@@ -10,10 +10,9 @@ function AdjustTrafficLight() {
     switch (mode) {
       case 'adaptiveTiming':
         return (
-          <Form.Group controlId="adaptiveTiming">
-            <Form.Label>Adaptive Timing</Form.Label>
-            <Form.Control type="number" placeholder="Enter timing adjustment" />
-          </Form.Group>
+          <div>
+            <p class="message">Now traffic is on adaptive timing control.</p>
+          </div>
         );
       case 'prioritySettings':
         return (
@@ -55,10 +54,10 @@ function AdjustTrafficLight() {
 
   return (
     <div className="adjust-traffic-light">
-      <h4>Adjust Traffic Lights</h4>
+      <h2>ADJUST TRAFFIC LIGHTS</h2>
       <Form>
         {/* Mode Selection */}
-        <Form.Group controlId="modeSelection">
+        <Form.Group class="formdata" controlId="modeSelection">
           <Form.Label>Select Mode</Form.Label>
           <Form.Control as="select" value={mode} onChange={(e) => setMode(e.target.value)}>
             <option value="adaptiveTiming">Adaptive Timing</option>

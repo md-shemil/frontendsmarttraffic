@@ -22,9 +22,9 @@ function Alerts() {
 
   return (
     <div>
-      <h4 className="text-primary">Alerts Panel</h4>
+      <h2>ALERTS PANEL</h2>
       {loading && <p>Loading...</p>}
-      {error && <p className="text-danger">{error}</p>}
+      {error && <p className="error">{error}</p>}
       <ul className="list-group mt-3">
         {alerts.length === 0 ? (
           <li className="list-group-item">No alerts available</li>

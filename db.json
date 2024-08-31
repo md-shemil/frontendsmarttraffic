@@ -1,0 +1,23 @@
+{
+    "trafficViolations": [
+      {
+        "id": 1,
+        "vehicleNumber": "KL01AB1234",
+        "violationType": "Speeding",
+        "penaltyAmount": 500
+      },
+      {
+        "id": 2,
+        "vehicleNumber": "TN02CD5678",
+        "violationType": "Red Light Jump",
+        "penaltyAmount": 1000
+      },
+      {
+        "id": 3,
+        "vehicleNumber": "KA03EF9012",
+        "violationType": "No Helmet",
+        "penaltyAmount": 300
+      }
+    ]
+  }
+  

@@ -1,103 +1,143 @@
 /* Global Styles */
 body {
-  background-color: #343a40;
-  color: #fff;
+  background-color: #ffffff; /* White background for the website */
+  color: #000000; /* Black text color */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Sidebar Styles */
-#sidebar {
-  background-color: #212529;
-  width: 280px;
+/* Navbar Styles */
+.navbar {
+  background-color: #212529; /* Dark grey for the navbar background */
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  overflow-y: auto;
-  padding: 1rem;
+  width: 100%;
+  z-index: 1000;
   transition: background-color 0.3s;
 }
 
-#sidebar .nav-link {
-  color: #adb5bd;
-  padding: 10px 15px;
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e8b86d; /* Use E8B86D for the brand color */
+}
+
+.nav-link {
+  color: #e8b86d !important; /* Use E8B86D for navbar links */
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   margin-bottom: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
-#sidebar .nav-link:hover {
+.nav-link:hover {
   background-color: #495057;
-  color: #fff;
+  color: #fff !important;
 }
 
-#sidebar .nav-link.active {
-  background-color: #0d6efd;
-  color: #fff;
-  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+.navbar-text {
+  font-size: 1rem;
+  color: #e8b86d; /* Use E8B86D for the navbar text */
 }
 
 /* Main Content Styles */
 #main-content {
-  margin-left: 280px;
+  padding-top: 15vh; /* Offset for the fixed navbar */
   padding: 1rem;
 }
 
 /* Table Styles */
 .table {
-  color: #fff;
-  background-color: #212529;
+  color: #000; /* Black text color for table */
+  background-color: #f8f9fa; /* Light grey background for table */
 }
 
 .table th, .table td {
-  border-color: #343a40;
+  border-color: #dee2e6; /* Light grey border for table */
   padding: 12px;
 }
 
 .table tbody tr:hover {
-  background-color: #495057;
+  background-color: #e9ecef; /* Light grey hover background for table rows */
 }
 
 /* List Group Styles */
 .list-group-item {
-  background-color: #343a40;
-  color: #fff;
+  background-color: #f8f9fa; /* Light grey background for list items */
+  color: #000; /* Black text color for list items */
 }
 
 .list-group-item:hover {
-  background-color: #495057;
-  color: #fff;
+  background-color: #e9ecef; /* Light grey hover background for list items */
+  color: #000; /* Black text color for hovered list items */
 }
 
 /* Button Styles */
 .btn {
-  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #e8b86d; /* Use E8B86D for button color */
+  color: #000; /* Black text color for button */
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-  background-color: #0d6efd;
-  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  background-color: #d69e3e; /* Slightly darker shade of E8B86D for hover */
+  box-shadow: 0 0 10px rgba(214, 158, 62, 0.5); /* Match button color */
 }
 
-/* Additional Hover Effects for Sidebar Links */
-#sidebar .nav-link {
-  color: #adb5bd;
-  padding: 10px 15px;
-  border-radius: 4px;
-  margin-bottom: 5px;
-  transition: background-color 0.3s, color 0.3s;
+/* Additional Hover Effects for Navbar Links */
+.nav-link.active {
+  background-color: #e8b86d; /* Use E8B86D for active link background */
+  color: #000 !important; /* Black text color for active link */
+  box-shadow: 0 0 10px rgba(232, 184, 109, 0.5); /* Match active link color */
 }
 
-#sidebar .nav-link:hover {
-  background-color: #495057;
-  color: #fff;
+/* Time and Date Alignment */
+h4, h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3vh;
 }
 
-#sidebar .nav-link.active {
-  background-color: #0d6efd;
-  color: #fff;
-  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+/* NavbarComponent.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 20px; /* Adjust spacing between items */
+}
+
+.navbar-text {
+  margin-left: auto;
+  padding-left: 20px;
+}
+.formdata{
+  margin-top: 10vh;
+  padding: 5%;
+}
+.message{
+
+  text-align: center;
+}
+.error{
+  text-align: center;
 }

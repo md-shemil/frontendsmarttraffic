@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function Map() {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC_XvarMHkUNZ3ppM_DKsMFJxj0F71Q92M`;
     script.async = true;
     document.head.appendChild(script);
 
@@ -26,7 +26,7 @@ function Map() {
 
   return (
     <div>
-      <h4 className="text-primary">Interactive Map</h4>
+      <h2>INTERACTIVE MAP</h2>
       <div id="googleMap" style={{ width: '100%', height: '400px' }}></div>
     </div>
   );

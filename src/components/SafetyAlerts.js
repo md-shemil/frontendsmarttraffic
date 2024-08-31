@@ -22,7 +22,7 @@ function SafetyAlerts() {
 
   return (
     <div>
-      <h4 className="text-primary">Safety Alerts</h4>
+      <h4 className="text-primary">SAFETY ALERTS</h4>
       {loading && <p>Loading...</p>}
       {error && <p className="text-danger">{error}</p>}
       <ul className="list-group mt-3">
